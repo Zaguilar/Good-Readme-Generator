@@ -29,9 +29,16 @@ function promptUser(){
                 name: "description"
             },
             {
-                type: "input",
+                type: "checkbox",
                 message: "Enter your table of contents.",
-                name: "tableContents"
+                name: "tableContents",
+                choices: ["[Description](#description)",
+                 "[Installation](#installation)", 
+                 "[Usage](#usage)", 
+                 "[License](#license)", 
+                 "[Contributing](#contributing)",
+                 "[Tests](#tests)",
+                 "[Questions](#questions)"]
             },
             {
               type: "input",
@@ -61,8 +68,13 @@ function promptUser(){
             },
             {
                 type: "input",
-                message: "Questions?",
-                name: "questions"
+                message: "What's your Github username?",
+                name: "gitHubUrl"
+            },
+            {
+                type: "input",
+                message: "What is your Email?",
+                name: "email"
             }
         ]
     );
@@ -71,7 +83,33 @@ function promptUser(){
 inqPromise = promptUser();
 inqPromise.then(function(userInput) {
    let md = `
-   ##${userInput.title}
+# ${userInput.title}
+
+## Description
+* ${userInput.description}
+
+## Table of Contents
+* (#${userInput.tableContents})
+
+## Installation
+* ${userInput.install}
+ 
+## Usage
+* ${userInput.usage}
+
+## License
+* ${userInput.licensing}
+
+## Contributing
+* ${userInput.contribute}
+
+## Tests
+* ${userInput.test}
+
+## Questions
+* If you have any additional questions you can email me at ${userInput.email}
+* [github link](https://github.com/${userInput.gitHubUrl})
+
    `;
    let writePromise = writeFileAsync("profile.md", md);
    writePromise.then(function() {
