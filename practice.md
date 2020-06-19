@@ -4,7 +4,7 @@
 * ${userInput.description}
 
 ## Table of Contents
-* ${userInput.tableContents}
+*(#${userInput.tableContents})
 
 ## Installation
 * ${userInput.install}
