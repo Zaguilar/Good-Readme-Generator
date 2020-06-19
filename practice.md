@@ -1,22 +1,25 @@
 # ${userInput.title}
 
 ## Description
-* ${userInput.title}
+* ${userInput.description}
 
 ## Table of Contents
-* ${userInput.title}
+* ${userInput.tableContents}
 
 ## Installation
-* ${userInput.title}
+* ${userInput.install}
  
 ## Usage
-* ${userInput.title}
+* ${userInput.usage}
 
-##
-* ${userInput.title}
+## License
+* ${userInput.licensing}
 
-* ${userInput.title}
+## Contributing
+* ${userInput.contribute}
 
-* ${userInput.title}
+## Tests
+* ${userInput.test}
 
-* ${userInput.title}
+## Questions
+* ${userInput.questions}
