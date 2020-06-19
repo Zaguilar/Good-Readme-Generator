@@ -46,7 +46,7 @@ function promptUser(){
             {
                 type: "list",
                 message: "License?",
-                name: "gitHubUrl",
+                name: "licensing",
                 choices: ["[MIT](https://choosealicense.com/licenses/mit/)", "ISC"]
             },
             {
