@@ -1,6 +1,7 @@
 # Good-Readme-Generator
-# Good README Test
-
+## Good README Test
+## Click the image below to watch the tutorial!
+[![screenshot](http://img.youtube.com/vi/-HgNkCxsIJI/0.jpg)](http://www.youtube.com/watch?v=-HgNkCxsIJI "App tutorial")
 ## Description
 * This is a CLI program that generates an md file using user input
 
