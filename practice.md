@@ -4,7 +4,7 @@
 * ${userInput.description}
 
 ## Table of Contents
-*(#${userInput.tableContents})
+* (#${userInput.tableContents})
 
 ## Installation
 * ${userInput.install}
@@ -22,4 +22,5 @@
 * ${userInput.test}
 
 ## Questions
-* ${userInput.questions}
+* If you have any additional questions you can email me at ${userInput.email}
+* [github link](https://github.com/${userInput.gitHubUrl})
