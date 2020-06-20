@@ -82,7 +82,9 @@ function promptUser(){
 
 inqPromise = promptUser();
 inqPromise.then(function(userInput) {
-   let md = `
+   /*template literal copy pasta from practice.md
+   after formatting properly*/
+    let md = `
 # ${userInput.title}
 
 ## Description
@@ -114,7 +116,8 @@ inqPromise.then(function(userInput) {
    let writePromise = writeFileAsync("profile.md", md);
    writePromise.then(function() {
        console.log("Successfully wrote out to profile.md");
-   }).catch(function(err) {
+  //function to display error to console
+    }).catch(function(err) {
         console.log("Problem with writing file profile.md");
         console.log(err);
    }).catch(function(err) {
